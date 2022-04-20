@@ -188,15 +188,21 @@
 }
 
 .buttons-bot{
-    justify-items: start;
+    /* justify-items: start;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:1rem;
+    gap:1rem;*/
+    justify-self: end; 
+    display: flex;
+    flex-wrap: wrap;
     padding: 1.5rem;
-    justify-self: end;
+    
+ 
 }
+    
 
 .buttons-bot > button{
+    margin: 1rem 1rem;
     background-color: rgb(255, 139, 72);
     color:white;
     width: 6rem;
@@ -220,7 +226,7 @@
 
 .cards-main{
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
    gap: 1.5rem;
    align-items: stretch;
 }
@@ -277,7 +283,7 @@
 .right-content{
     padding: 1.5rem 1rem 0 0;
     background-color:rgb(209, 209, 209);
-    display: grid;
+    
 }
 
 .right-content .card{
