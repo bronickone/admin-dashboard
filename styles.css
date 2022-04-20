@@ -6,6 +6,7 @@
  body{
      font-family: Roboto, serif;
      height: 100%;
+     width: 100%;
     
  }
 .container{
@@ -92,13 +93,15 @@
 .header{
     grid-column: 2 / 4;
     background-color:whitesmoke;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* grid-template-rows: repeat(2, 1fr); */
-    align-items: center;
+    align-items: center; */
     padding-bottom: 1rem;
     box-shadow: 5px 2px 5px rgba(90, 90, 90, 0.671);
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
 
@@ -113,10 +116,11 @@
 }
 
 .header-search{
+    flex:0;
     justify-content: start;
     gap:1.5rem;
     justify-self: start;
-    /* padding: 1.5rem; */
+     padding: 1.5rem; 
     display: grid;
     align-items: center;
     justify-items: start;
@@ -137,7 +141,7 @@
 .info-top{
     grid-column: 2;
     grid-row: 1;
-    padding: 1rem;
+    padding-left: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     align-items: center;
@@ -157,7 +161,7 @@
 
 
 .info-bot{
-    padding-left: 4rem;
+    padding-left: 1.5rem;
     display: grid;
     
     gap:0.6rem;
@@ -191,8 +195,8 @@
 .buttons-bot{
     /* justify-items: start;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:1rem;*/
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap:1rem; */
     justify-self: end; 
     display: flex;
     flex-wrap: wrap;
