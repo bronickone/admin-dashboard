@@ -28,14 +28,15 @@
     
 }
 
-h1 > img{
+.sidebar-head > img{
     height: auto;
     width: 2rem;
-    fill: green;
+    filter:invert(1);
     
 }
 
 .sidebar-head > h1{
+    
     color:white;
     font-size: 1.5rem;
 }
@@ -43,7 +44,7 @@ h1 > img{
      /* display:flex;
     justify-content: flex-start;
     align-items: center; */
-    padding: 10px;
+    padding: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 7fr;
     align-items: center;
@@ -91,7 +92,7 @@ h1 > img{
     grid-column: 2 / 4;
     background-color:whitesmoke;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     /* grid-template-rows: repeat(2, 1fr); */
     align-items: center;
     padding-bottom: 1rem;
@@ -101,7 +102,7 @@ h1 > img{
 }
 
 .header-search > img{
-    justify-self: center;
+    justify-self: end;
 }
 
 .header-search img, .info-top > .bell {
@@ -111,8 +112,10 @@ h1 > img{
 }
 
 .header-search{
+    justify-content: start;
+    gap:1.5rem;
     justify-self: start;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     display: grid;
     align-items: center;
     justify-items: start;
@@ -122,7 +125,7 @@ h1 > img{
 
 .header-search input{
     background-color: rgb(170, 170, 170);
-    width:30rem;
+    width:calc(250px + 10vw);
     border: none;
     border-radius: 4rem;
     height: 1.6rem;
@@ -212,7 +215,7 @@ h1 > img{
 
 .main-content{
     padding: 1.5rem;
-    background-color: rgb(175, 175, 175);   
+    background-color: rgb(209, 209, 209);   
 }
 
 .cards-main{
@@ -260,7 +263,75 @@ h1 > img{
     background-color: #FFFFFF;
     color: black;
     text-align: left;
-    min-height: 180px;
+    min-height: 220px;
     border-radius: 7px;
     border-left: 7px solid rgb(2, 154, 255);
   }
+
+
+
+
+
+
+
+.right-content{
+    padding: 1.5rem 1rem 0 0;
+    background-color:rgb(209, 209, 209);
+    display: grid;
+}
+
+.right-content .card{
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    padding:0.5rem;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    height: 328px;
+    min-width:250px;
+    border-radius: 7px;
+    border: 15px solid rgb(255, 255, 255);
+}
+
+.right-top .card-element:nth-child(1), .right-top .card-element:nth-child(2){
+   
+    border-bottom:1px solid rgb(231, 231, 231);   
+}
+
+.card-element{
+    padding: 0.5rem;
+}
+
+.card-element h1{
+    font-size: 0.9rem;
+}
+
+.card-element p{
+    font-size: 0.8rem;
+    color: rgb(95, 95, 95);
+}
+
+.right-header{
+    padding: 1rem 0;
+    font-weight: 900;
+}
+
+
+
+.right-bot .card-element{
+    display: grid;
+    gap:0.4rem;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: start;
+}
+.right-bot h1{
+    align-self: end;
+}
+.right-bot img{
+    align-self: center;
+    width: 3rem;
+    border-radius: 50%;
+    grid-row: 1 / 3;
+}
