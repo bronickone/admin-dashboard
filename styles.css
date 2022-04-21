@@ -4,7 +4,9 @@
     box-sizing: border-box;
 
 }
-
+html{
+    font-size: 16px;
+}
 
  body{
      font-family: Roboto, serif;
@@ -16,7 +18,7 @@
  .container{  
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 15rem auto;
+    grid-template-rows: 1fr auto;
 }
 
 /* ---------------------------SIDEBAR------------------------------- */
