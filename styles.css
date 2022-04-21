@@ -43,7 +43,7 @@ html{
     filter:invert(1);    
 }
 
-.sidebar-head > h1{
+.sidebar-head > .title{
     color:white;
     font-size: 1.5rem;
 }
@@ -247,7 +247,7 @@ html{
     font-size: 0.8rem;
 }
   
-.card .title {
+ .cards-main .title {
     padding:1.5rem 2rem 0; 
       font-weight: 900;
     font-size: 1rem;
@@ -320,11 +320,11 @@ html{
     padding: 0.5rem;
 }
 
-.card-element h1{
+.card-element  .title{
     font-size: 0.9rem;
 }
 
-.card-element p{
+.card-element .para{
     font-size: 0.8rem;
     color: rgb(95, 95, 95);
 }
@@ -344,7 +344,7 @@ html{
     justify-self: start;
 }
 
-.right-bot h1{
+.right-bot .title{
     align-self: end;
 }
 
